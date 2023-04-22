@@ -1,3 +1,14 @@
+<?php
+session_start();
+if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
+  unset($_SESSION['email']);
+  unset($_SESSION['senha']);
+  header('Location:login.html');
+
+}
+$logado = $_SESSION['email'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +16,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/apresentação.css">
-  <link rel="stylesheet" href="css/menu.css ">
+  <link rel="stylesheet" href="../css/apresentação.css">
+  <link rel="stylesheet" href="../css/menu.css ">
 
 
   <title>CodeGenious</title>
@@ -31,18 +42,14 @@
       </ul>
     </nav>
   </header>
-  <script src="js/menu.js"></script>
+  <script src="../js/menu.js"></script>
   
-  <div class="center">
-      <img src="img/Robo.png" id="robo">
-        <div class="comeceaqui"> 
-          <a href="paginas/login.php"><img src="img/comeceaqui.jpg" alt="" width="100%" ></a>
-        </div>
-      
-    </div>
   
+  <h1 style="margin-top: 150px;"><?php
+  echo "Olá $logado" ?></h1>
+  <button><a href="logout.php">Sair</a></button>
   <div class="sobrenos">
-    <img src="img/sobrenos.png" alt="" width="100%">
+    <img src="../img/sobrenos.png" alt="" width="100%">
   </div>
   
 
