@@ -51,6 +51,7 @@
       </div>
       <div class="img">
         <img src="../img/2-removebg-preview-removebg-preview.png">
+        
       </div>
     
     </div>
