@@ -1,16 +1,55 @@
 * {
     margin: 0px;
 }
-.center{
-    display: flex;
+
+ h1{
+    
+ position: relative;
+
+color: #3852B5;
+font-size: 40px;
+text-align: center;
+
+ }
+input{
+    margin: auto;
+    background-color:#c3cfff ;
+       padding: 8px;
+       display: block;
+       border: none;
+       outline: none;
+     width: 300px;
+   }
+.ranking{
+    background-color: #c3cfff41;
+  
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-bottom: 100px;
+    margin-left: 300px;
+    display: inline-block;
+
+   
+    
+ }
+
+ .center{
+  
+display: inline-block;
     flex-direction: row;
     align-content: center;
     padding: 30px;
     justify-content: center;
     margin: 10% auto;
+    margin-right: auto;
 }
 #robo{
     width: 650px;
+    margin-bottom: -40px;
+    
+   
 }
 .sobrenos {
     background-color: #3852b5;
@@ -26,17 +65,68 @@
 .comeceaqui{
     text-align: center;
     transform: translateY(240px);
+  margin-top: -200px
+  
 }
 .comeceaqui img{
     transition: transform 0.3s ease-in-out;
     width: 500px;
     margin: 10% 5%; 
+    
     }
 .comeceaqui img:hover{
         transform: scale(1.05);
     }
+    @media(max-width:1992px){
+        .ranking{
+            margin-left: 600px;}
+            .comeceaqui img{
+                transition: transform 0.3s ease-in-out;
+                width: 500px;
+                margin-top: -100px;}
+            
+    }
 
-@media(max-width:990px) {
+    @media(max-width:1720px){
+        .ranking{
+            margin-left: 400px;}
+            .comeceaqui img{
+                transition: transform 0.3s ease-in-out;
+                width: 400px;
+                margin-top: -50px;}
+    }
+    @media(max-width:1550px){
+        .ranking{
+            margin-left: 300px;}
+    }
+
+    @media(max-width:1430px){
+        .ranking{
+            margin-left: 100px;}
+    }
+    @media(max-width:1205px){
+        .ranking{
+            margin-left: 25px;
+            width: 300px;
+            height: 500px;}
+            input{
+                width: 200px;
+            }
+            #robo{
+                width: 600px;
+            }
+    }
+@media(max-width:999px) {
+    .ranking{
+        display: block;
+        width: 400px;
+        height: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+   }
+        input{
+            width: 200px;
+        }
     .center{
         display: flex;
         flex-direction: column;
@@ -49,6 +139,8 @@
     }
     .comeceaqui img{
         margin: 7% auto;
+        width: 400px;
+        margin-top: 120px;
     }
     .comeceaqui{
         transform: translateY(0px);
@@ -56,19 +148,38 @@
     }
 }
 @media(max-width:700px){
+    .ranking{
+        display: block;
+        width: 350px;
+        height: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .comeceaqui img{
+    margin: 7% auto;
+    width: 400px;
+    margin-top: 120px;
+}
+        input{
+            width: 150px;}
     #robo{
         width: 550px;
     }
-    .comeceaqui img{
-        
-        width: 450px;
-        margin: 10% 5%; 
-        }
+    
     .sobrenos img{
         height:350px
     }
 }
 @media(max-width:550px){
+    .ranking{
+        display: block;
+        width: 325px;
+        height: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+   }
+        input{
+            width: 150px;}
     #robo{
         width: 450px;
     }
@@ -77,6 +188,16 @@
     }
 }
 @media(max-width:450px){
+    .ranking{
+        display: block;
+        width: 280px;
+        height: 470px; 
+    margin-left: auto;
+    margin-right: auto;
+   }
+        input{
+            width: 150px;
+        padding: 4px;}
     #robo{
         width: 330px;
     }
@@ -85,6 +206,20 @@
     }
 }
 @media(max-width:380px){
+    .ranking{
+        display: block;
+        width: 250px;
+        height: 460px; 
+    margin-left: auto;
+    margin-right: auto;
+   }
+        input{
+            width: 150px;
+        padding: 2px;}
+        .ranking img{
+            width: 25px;
+            height: 25px;
+        }
     #robo{
         width: 300px;
     }
