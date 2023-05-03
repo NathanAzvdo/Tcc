@@ -5,6 +5,7 @@
   $email = $_POST['email'];
   $senha = $_POST['senha'];
   
+  
 
   include_once('config.php');
     
@@ -12,7 +13,7 @@
   VALUES (default, '$nom', '$senha', '$email');";
 
   if(mysqli_query($conexao, $result)){
-    header('location:login.php');
+    header('location:login.html');
   }
   else{
     echo "error:" .sql ."<br>". mysqli_error($conexao);

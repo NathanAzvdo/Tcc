@@ -23,6 +23,6 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
    }
 }
 else{
-    header('location:login.php');
+    header('location:login.html');
 }
 ?>

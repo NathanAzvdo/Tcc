@@ -2,22 +2,60 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
-.center{
+.center, .centerlog{
     display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: center;
-    margin: 0 auto;
+  
+    margin: 40px auto 0px;
+}
+.center{
+  justify-content: space-evenly;
+}
+.centerlog{
+  justify-content: space-between;
+}
+.form{
+  background-color: #f8f9fe;
+  border-radius: 10px;
+  padding: 30px;
+}
+.florCanto img{
+  transform: translateX(-10px);
+  width: 200px;
+}
+.florCanto{
+  width: 5vw;
+}
+.logcenter{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin: 10px auto;
+  width: 650px;
+  height: 400px;
+  background-color: #f8f9fe;
+  border-radius: 10px;
+  
+}
+.logcenter a{
+  color: #586299;
+  text-decoration: none;
+}
+form{
+  margin: 10px;
 }
 #btn{
   width: 320px;
   border-radius: 10px;
   height: 45px;
   margin: 30px auto;
-  background-color:#3852b5;
+  background-color:#667f2b;
   color: #fff;
-  border: 5px solid #3852b5;
+  border: 5px solid #667f2b;
   font-size: large;
   padding: 10px;
   cursor: pointer;
@@ -35,14 +73,14 @@ form input{
    border-radius: 10px;
    font-size: large;
    padding: 10px;
-   width: 450px;
-   height: 23px;
-   margin: 5px auto;
+   width: 550px;
+   height: 40px;
+   margin: 5px auto 15px;
  }
 .title{
   font-size:3rem;
   color: #3852b5;
-  margin: 150px auto 10px;
+  margin: 150px auto 5px;
   text-align: center;
   display: flex;
   justify-content: center;

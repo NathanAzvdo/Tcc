@@ -27,7 +27,7 @@ $logado = $_SESSION['email'];
 <body>
   <header>
     <nav>
-      <a class="logo" href="index.html">CodeGenious</a>
+      <a class="logo" href="telaInicial.php">CodeGenious</a>
       <div class="mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -35,19 +35,44 @@ $logado = $_SESSION['email'];
       </div>
       <ul class="nav-list">
         <li><a href="#">Jogos</a></li>
-        <li><a href="#">Login</a></li>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre nós</a></li>
         <li><a href="#">Teste</a></li>
+        <li><a href="logout.php">logout</a></li>
       </ul>
     </nav>
   </header>
   <script src="../js/menu.js"></script>
   
-  
-  <h1 style="margin-top: 150px;"><?php
+  <div class="center">
+  <div class="inf">
+
+    <h1 style="margin-top: 150px;"><?php
   echo "Olá $logado" ?></h1>
-  <button><a href="logout.php">Sair</a></button>
+</div>
+
+  <div class="ranking" >
+      <h1>Ranking <img src="../img/trofeu-removebg-preview.png" alt="" width="30px" height="30px"></h1>
+      <br>
+      <img src="../img/primeiro-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
+      <br>
+      <input type="text">
+      <img src="../img/segundo-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
+      <br>
+      <input type="text">
+      <img src="../img/terceiro-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
+      <br>
+      <input type="text">
+      <img src="../img/quarto2-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
+      <br>
+      <input type="text">
+      <img src="../img/quinto-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
+      <br>
+      <input type="text">
+    </div>
+  </div>
+    
+    
   <div class="sobrenos">
     <img src="../img/sobrenos.png" alt="" width="100%">
   </div>

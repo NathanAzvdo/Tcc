@@ -1,5 +1,8 @@
 * {
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
  h1{
@@ -22,34 +25,23 @@ input{
    }
 .ranking{
     background-color: #c3cfff41;
-  
     width: 400px;
     height: 500px;
     text-align: center;
-    margin-left: auto;
-    margin-bottom: 100px;
-    margin-left: 300px;
-    display: inline-block;
-
-   
-    
- }
+}
 
  .center{
-  
-display: inline-block;
+    display: flex;
     flex-direction: row;
-    align-content: center;
     padding: 30px;
     justify-content: center;
     margin: 10% auto;
     margin-right: auto;
+    align-content: center;
 }
 #robo{
-    width: 650px;
-    margin-bottom: -40px;
-    
-   
+    width: 550px;
+    height: 450px;
 }
 .sobrenos {
     background-color: #3852b5;
