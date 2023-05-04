@@ -2,7 +2,61 @@
     padding: 0;
     margin: 0;
 }
-
-.titulo{
+.ranking{
+    background-color: #c3cfff41;
+    width: 500px;
     text-align: center;
+    padding: 20px;
+    margin:0 auto ;
+  
+}
+.rankName{
+    width: 300px;
+    margin: 0 auto;
+    background-color: #c3cfff;
+    height: 30px;
+    color: #fff;
+    padding: 5px;
+}
+.ranking h1{
+    
+    position: relative;
+   
+   color: #3852B5;
+   font-size: 40px;
+   text-align: center;
+   
+}
+@media(max-width:1550px){
+    .ranking{
+        margin-left: 300px;
+        
+    }
+    .rankName{
+        width: 90%;
+    }
+}
+@media(max-width:1230px){
+    .ranking{
+        margin:70px 0;
+        width: 300px;
+    }
+
+    }
+@media(max-width:999px) {
+    .ranking{
+        width: 650px;
+        margin: 50px auto;
+    }
+ 
+}
+@media(max-width:700px){
+    .ranking{
+    width: 100%;
+   }
+}
+@media(max-width:550px){
+    .ranking{
+    width: 95%;
+   }
 }
