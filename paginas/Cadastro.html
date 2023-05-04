@@ -1,20 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CodeGenious</title>
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/cadastro.css">
-    <script src="../js/valida.js"></script>
+    <link rel="icon" href="../img/icon.png">
 </head>
 <body>
 
   <header>
     <nav>
-      <a class="logo" href="../index.html">CodeGenious</a>
+      <a class="logo" href="../telaPrinc.php">CodeGenious</a>
       <div class="mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -29,22 +28,22 @@
       </ul>
     </nav>
   </header>
-  <script src="js/menu.js"></script>
+  <script src="../js/menu.js"></script>
     
   
 
-    <div class="title">Faça seu cadastro:</div>
-    <div class="center">
-      <div class="form">
+  <div class="center">
+    <div class="form">
+        <div class="title">Faça seu cadastro:</div>
         <form action="cad.php" method="POST">
           <label for="nome">Nome de Usuário:</label><br>
-          <input type="text" name="nome" id="nome" onchange="validacao()"><br>
+          <input type="text" name="nome" id="nome"><br>
           <label for="email">Email:</label><br>
-          <input type="email" name="email" id="email" onchange="validacao()"><br>
+          <input type="email" name="email" id="email"><br>
           <label for="senha">Senha:</label><br>
-          <input type="password" name="senha" id="senha" onchange="validacao()"><br>
+          <input type="password" name="senha" id="senha"><br>
           <label for="Confsenha">Confirme a senha:</label><br>
-          <input type="password" name="Confsenha" id="confsenha" onchange="validacao()"><br>
+          <input type="password" name="confsenha" id="confsenha"><br>
           <div style="text-align:center;">
           <input type="submit" value="enviar" id="btn">
           </div>

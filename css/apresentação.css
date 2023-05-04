@@ -63,7 +63,6 @@ input{
 }
 #robo{
     width: 550px;
-    height: 450px;
 }
 .sobrenos {
     background-color: #3852b5;
@@ -91,65 +90,59 @@ input{
 .comeceaqui img:hover{
         transform: scale(1.05);
     }
-    @media(max-width:1992px){
-        .ranking{
-            margin-left: 600px;}
-            .comeceaqui img{
-                transition: transform 0.3s ease-in-out;
-                width: 500px;
-                margin-top: -100px;}
-            
+    
+    
+@media(max-width:1992px){
+    .ranking{
+        margin-left: 600px;
     }
-
-    @media(max-width:1720px){
-        .ranking{
-            margin-left: 400px;}
-            .comeceaqui img{
-                transition: transform 0.3s ease-in-out;
-                width: 400px;
-                margin-top: -50px;}
+    .comeceaqui img{
+        transition: transform 0.3s ease-in-out;
+        width: 500px;
+        margin-top: -100px;
     }
-    @media(max-width:1550px){
-        .ranking{
-            margin-left: 300px;}
+}
+@media(max-width:1550px){
+    .ranking{
+        margin-left: 300px;
+        
     }
-
-    @media(max-width:1430px){
-        .ranking{
-            margin-left: 100px;}
+    .rankName{
+        width: 90%;
     }
-    @media(max-width:1205px){
-        .ranking{
-            margin-left: 25px;
-            width: 300px;
-            height: 500px;}
-            input{
-                width: 200px;
-            }
-            #robo{
-                width: 600px;
-            }
+}
+@media(max-width:1230px){
+    .ranking{
+        margin:70px auto;
+        width: 300px;
+    }
+    input{
+        width: 200px;
+    }
+    #robo{
+        margin: 0 auto;
+        width: 500px;
+    }
+    .center{
+        flex-direction: column;
+        justify-content: center;
+        margin: 10% auto;
+    }
+    .ranking{
+        transform: translateX(0px);
+    }
     }
 @media(max-width:999px) {
     .ranking{
-        display: block;
-        width: 400px;
-        height: 500px; 
-    margin-left: auto;
-    margin-right: auto;
-   }
-        input{
-            width: 200px;
-        }
-    .center{
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        margin: 15% auto;
+        width: 650px;
+        margin-left: 0 auto;
     }
     #robo{
-        margin: 0 auto
+        display: none;
+     }
+    .center{
+        align-content: center;
+        margin: 7% auto;
     }
     .comeceaqui img{
         margin: 7% auto;
@@ -158,26 +151,14 @@ input{
     }
     .comeceaqui{
         transform: translateY(0px);
-
     }
 }
 @media(max-width:700px){
     .ranking{
-        display: block;
-        width: 350px;
-        height: 500px; 
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
    }
-   .comeceaqui img{
-    margin: 7% auto;
-    width: 400px;
-    margin-top: 120px;
-}
-        input{
-            width: 150px;}
-    #robo{
-        width: 550px;
+    input{
+        width: 150px;
     }
     
     .sobrenos img{
@@ -186,66 +167,10 @@ input{
 }
 @media(max-width:550px){
     .ranking{
-        display: block;
-        width: 325px;
-        height: 500px; 
-    margin-left: auto;
-    margin-right: auto;
+    width: 95%;
+    margin: 50px auto;
    }
-        input{
-            width: 150px;}
-    #robo{
-        width: 450px;
-    }
     .comeceaqui img{
-        width: 350px;
-    }
-}
-@media(max-width:450px){
-    .ranking{
-        display: block;
-        width: 280px;
-        height: 470px; 
-    margin-left: auto;
-    margin-right: auto;
-   }
-        input{
-            width: 150px;
-        padding: 4px;}
-    #robo{
-        width: 330px;
-    }
-    .comeceaqui img{
-        width: 280px;
-    }
-}
-@media(max-width:380px){
-    .ranking{
-        display: block;
-        width: 250px;
-        height: 460px; 
-    margin-left: auto;
-    margin-right: auto;
-   }
-        input{
-            width: 150px;
-        padding: 2px;}
-        .ranking img{
-            width: 25px;
-            height: 25px;
-        }
-    #robo{
-        width: 300px;
-    }
-    .comeceaqui img{
-        width: 250px;
-    }
-}
-@media(max-width:350px){
-    #robo{
-        width: 280px;
-    }
-    .comeceaqui img{
-        width: 230px;
+        width: 70%;
     }
 }

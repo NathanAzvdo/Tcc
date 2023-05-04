@@ -1,26 +1,24 @@
 <?php
 
+  $nom = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
+  $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
+  $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
+  $cfSenha = filter_input(INPUT_POST, 'confsenha', FILTER_SANITIZE_STRING);
 
-  $nom = $_POST['nome'];
-  $email = $_POST['email'];
-  $senha = $_POST['senha'];
-  
-  
 
-  include_once('config.php');
     
-  $result = "INSERT INTO cadastro
-  VALUES (default, '$nom', '$senha', '$email', default);";
-
-  if(mysqli_query($conexao, $result)){
-    header('location:login.html');
-  }
-  else{
-    echo "error:" .sql ."<br>". mysqli_error($conexao);
-  }
+    include_once('config.php');
     
+    $result = "INSERT INTO cadastro
+    VALUES (default, '$nom', '$senha', '$email', default);";
   
-  mysqli_close($conexao);
-  
-  
+    if(mysqli_query($conexao, $result)){
+      header('location:login.html');
+    }
+    else{
+      echo "error:" .sql ."<br>". mysqli_error($conexao);
+    }
+      
+    
+    mysqli_close($conexao);
 ?>

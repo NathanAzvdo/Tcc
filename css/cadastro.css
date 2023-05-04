@@ -4,42 +4,48 @@
   box-sizing: border-box;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
-.center, .centerlog{
+.center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px auto 0px;
+}
+.centerLog{
     display: flex;
     flex-direction: row;
     align-content: center;
-  
-    margin: 40px auto 0px;
+    justify-content: space-between;
+    margin: 100px auto 0px;
+    align-items: center;
 }
-.center{
-  justify-content: space-evenly;
-}
-.centerlog{
-  justify-content: space-between;
+.roboEsq img{
+  width: 200px;
 }
 .form{
+  text-align: center;
+}
+.form form{
   background-color: #f8f9fe;
   border-radius: 10px;
   padding: 30px;
+  text-align: left;
 }
 .florCanto img{
   transform: translateX(-10px);
-  width: 200px;
+  width: 210px;
 }
-.florCanto{
-  width: 5vw;
+#Lemail{
+  margin-top: 15px;
 }
 .logcenter{
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  margin: 10px auto;
-  width: 650px;
-  height: 400px;
-  background-color: #f8f9fe;
+  text-align: center;
+}
+.logcenter form{
+  padding: 30px;
   border-radius: 10px;
-  
+  text-align: left;
+  background-color: #f8f9fe;
 }
 .logcenter a{
   color: #586299;
@@ -78,11 +84,90 @@ form input{
    margin: 5px auto 15px;
  }
 .title{
-  font-size:3rem;
+  font-size:2.5rem;
   color: #3852b5;
   margin: 150px auto 5px;
   text-align: center;
-  display: flex;
+  display: inline-block;
   justify-content: center;
 }
+@media(max-width:1150px){
+  .roboEsq img{
+    display: none;
+  }
+  .roboEsq{
+    display: none;
+  }
+  .logcenter{
+    margin-right: 80px;
+  }
+  .img{
+    display: none;
+  }
+}
+@media(max-width:1000px){
+  .florCanto{
+    display: none;
+  }
+  .logcenter{
+    margin:0 auto;
+  }
+  .centerLog{
 
+    margin: 0 auto;
+  }
+  .logcenter{
+    width: 90vw;
+  }
+  .title{
+    font-size: xx-large;
+  }
+  .logcenter form{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .logcenter label{
+    text-align: center;
+    font-size: large;
+  }
+  .logcenter input, #btn{
+    width: 80%;
+  }
+}
+@media(max-width:700px){
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .center form{
+    width: 90vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .center label{
+    text-align: center;
+  }
+  .center input{
+    width: 90%;
+  }
+  .center{
+    width: 90%;
+  }
+}
+@media(max-width:450px){
+  .logcenter input, #btn{
+    width: 100%;
+  }
+  .center input{
+    width: 97%;
+  }
+  .title{
+    font-size: xx-large;
+  }
+  .center label{
+    font-size: x-large;
+  }
+}

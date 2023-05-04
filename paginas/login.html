@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CodeGenious</title>
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="icon" href="../img/icon.png">
 </head>
 <body>
 
   <header>
     <nav>
-      <a class="logo" href="../index.html">CodeGenious</a>
+      <a class="logo" href="../telaPrinc.php">CodeGenious</a>
       <div class="mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -27,20 +28,21 @@
       </ul>
     </nav>
   </header>
-  <script src="js/menu.js"></script>
+  <script src="../js/menu.js"></script>
     
   
-  <div class="title">Fazer login</div>
-    <div class="centerlog">
-      
-    <div class="florCanto">
-      <img src="../img/flor.png">
-    </div>
+ 
+    <div class="centerLog">
+
+      <div class="florCanto">
+        <img src="../img/flor.png">
+      </div>
     
-    <div class="logcenter">
+      <div class="logcenter">
+        <div class="title">Fazer login</div><br>
         <form action="log.php" method="POST">
-          <label for="email">Email:</label><br>
-          <input type="text" name="email" id="email"><br>
+          <label for="email" id="Lemail">Email:</label><br>
+          <input type="email" name="email" id="email"><br>
           <label for="nome">Senha:</label><br>
           <input type="password" name="senha" id="senha"><br>
           <div style="text-align:center">
@@ -49,6 +51,12 @@
           </div>
         </form>
       </div>
+
+      <div class="roboEsq">
+        <img src="../img/roboCanto.jpeg">
+      </div>
+    </div>
+      
 
     </div>
       

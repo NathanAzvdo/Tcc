@@ -10,7 +10,7 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
 $email = $_SESSION['email'];
 $sql = "SELECT nome_usuario FROM cadastro order by ranking DESC LIMIT 5";
 $result = $conexao->query($sql);
-$nomes = [1, 2, 3, 4, 5];
+$nomes = [];
 $cont=0;
 while($USER_DATA = mysqli_fetch_assoc($result))
 {
@@ -29,6 +29,7 @@ while($USER_DATA = mysqli_fetch_assoc($result))
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/apresentação.css">
   <link rel="stylesheet" href="../css/menu.css ">
+  <link rel="icon" href="../img/icon.png">
 
 
   <title>CodeGenious</title>
