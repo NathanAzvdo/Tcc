@@ -25,17 +25,39 @@ input{
    }
 .ranking{
     background-color: #c3cfff41;
-    width: 400px;
+    width: 500px;
     height: 500px;
     text-align: center;
+    transform: translateX(-200px);
+  
 }
-
+.rankName{
+    width: 300px;
+    margin: 0 auto;
+    background-color: #c3cfff;
+    height: 30px;
+    color: #fff;
+    padding: 5px;
+}
+.fases{
+    width: 50vw;
+}
+.fase{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    background-color: #c3cfff;
+    color: #fff;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+}
  .center{
     display: flex;
     flex-direction: row;
     padding: 30px;
     justify-content: center;
-    margin: 10% auto;
+    margin: 10% auto 5%;
     margin-right: auto;
     align-content: center;
 }

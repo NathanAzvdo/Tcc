@@ -10,7 +10,7 @@
   include_once('config.php');
     
   $result = "INSERT INTO cadastro
-  VALUES (default, '$nom', '$senha', '$email');";
+  VALUES (default, '$nom', '$senha', '$email', default);";
 
   if(mysqli_query($conexao, $result)){
     header('location:login.html');

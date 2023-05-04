@@ -1,3 +1,18 @@
+<?php
+
+include_once('paginas/config.php');
+
+$sql = "SELECT nome_usuario FROM cadastro order by ranking DESC LIMIT 5";
+$result = $conexao->query($sql);
+$nomes = [1, 2, 3, 4, 5];
+$cont=0;
+while($USER_DATA = mysqli_fetch_assoc($result))
+{
+  $nomes[$cont]=$USER_DATA['nome_usuario'];
+  $cont++;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +31,7 @@
 <body>
   <header>
     <nav>
-      <a class="logo" href="index.html">CodeGenious</a>
+      <a class="logo" href="index.php">CodeGenious</a>
       <div class="mobile-menu">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -38,25 +53,35 @@
     <img src="img/Robo.png" id="robo">
     
     
-    <div class="ranking" >
+    <div class="ranking">
       <h1>Ranking <img src="img/trofeu-removebg-preview.png" alt="" width="30px" height="30px"></h1>
       <br>
       <img src="img/primeiro-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
       <br>
-      <input type="text">
+      <div class="rankName"><?php
+      echo $nomes[0];
+      ?></div>
       <img src="img/segundo-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
       <br>
-      <input type="text">
+      <div class="rankName"><?php
+      echo $nomes[1];
+      ?></div>
       <img src="img/terceiro-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
       <br>
-      <input type="text">
+      <div class="rankName"><?php
+      echo $nomes[2];
+      ?></div>
       <img src="img/quarto2-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
       <br>
-      <input type="text">
+      <div class="rankName"><?php
+      echo $nomes[3];
+      ?></div>
       <img src="img/quinto-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
       <br>
-      <input type="text">
-      </div>
+      <div class="rankName"><?php
+      echo $nomes[4];
+      ?></div>
+    </div>
   
   </div>
   
