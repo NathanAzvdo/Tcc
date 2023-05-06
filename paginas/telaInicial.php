@@ -62,14 +62,15 @@ while($USER_DATA = mysqli_fetch_assoc($result))
   <div class="center">
 
     <div class="fases">
-    <div class="fase">Fase1</div>
-    <div class="fase">Fase2</div>
-    <div class="fase">Fase3</div>
-    <div class="fase">Fase4</div>
-    <div class="fase">Fase5</div>
-    <div class="fase">Fase6</div>
-    <div class="fase">Fase7</div>
-    <div class="fase">Fase8</div>
+    <div class="fase"><div class="title-fase">Fase1</div><br>Comandos de entrada e operadores</div>
+    <div class="fase"><div class="title-fase">Fase2</div><br>Váriaveis</div>
+    <div class="fase"><div class="title-fase">Fase3</div><br>Operadores lógicos e relacionais</div>
+    <div class="fase"><div class="title-fase">Fase4</div><br>Estruturas Condicionais</div>
+    <div class="fase"><div class="title-fase">Fase5</div><br>Estruturadas de Repetição</div>
+    <div class="fase"><div class="title-fase">Fase6</div><br>Procedimentos</div>
+    <div class="fase"><div class="title-fase">Fase7</div><br>Funções</div>
+    <div class="fase"><div class="title-fase">Fase8</div><br>Vetores</div>
+    <div class="fase"><div class="title-fase">Fase9</div><br>Matrizes</div>
     </div>
   
     
@@ -115,8 +116,6 @@ while($USER_DATA = mysqli_fetch_assoc($result))
       
       <div class="textFooter">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus consequatur rerum deserunt dignissimos quasi facilis repellat odio tempora, recusandae quos ratione, ullam dolore fugit laboriosam facere. Tenetur doloremque labore nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorem ipsa incidunt quia, assumenda nisi voluptates neque cumque vitae. Sint natus assumenda voluptates eligendi laboriosam aut sed necessitatibus numquam reiciendis!
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae doloribus tempora earum voluptate eligendi ab unde dolorum eos atque accusamus placeat ullam ipsum ut corporis repellat, nam quibusdam dolore enim.
       </div>
       
       

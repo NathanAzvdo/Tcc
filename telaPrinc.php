@@ -109,8 +109,6 @@ while($USER_DATA = mysqli_fetch_assoc($result))
       
       <div class="textFooter">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus consequatur rerum deserunt dignissimos quasi facilis repellat odio tempora, recusandae quos ratione, ullam dolore fugit laboriosam facere. Tenetur doloremque labore nihil!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorem ipsa incidunt quia, assumenda nisi voluptates neque cumque vitae. Sint natus assumenda voluptates eligendi laboriosam aut sed necessitatibus numquam reiciendis!
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae doloribus tempora earum voluptate eligendi ab unde dolorum eos atque accusamus placeat ullam ipsum ut corporis repellat, nam quibusdam dolore enim.
       </div>
       
 

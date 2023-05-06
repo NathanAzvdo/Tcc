@@ -15,17 +15,29 @@ input{
      width: 300px;
    }
 .fases{
-    width: 50vw;
+    width: 900px;
+    margin: 0 20px;
 }
 .fase{
-    width: 200px;
-    height: 40px;
-    padding: 10px;
+    width: 350px;
     background-color: #c3cfff;
     color: #fff;
+    padding: 5px 0;
     margin: 10px;
     display: inline-block;
     text-align: center;
+    padding-top: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+.title-fase{
+    font-size: larger;
+    color: #fff;
+
+}
+.fase:hover{
+    transform: scale(1.02);
+    border: 1px solid #3852b5;
 }
  .center{
     display: flex;
@@ -36,11 +48,13 @@ input{
     margin-right: auto;
     align-content: center;
     text-align: center;
+    width: 70%;
 }
 
 #robo{
     width: 550px;
     height:500px;
+    margin-left: 70px;
 }
 .sobrenos {
     background-color: #3852b5;
@@ -89,12 +103,26 @@ input{
         flex-direction: column;
         justify-content: center;
         margin: 10% auto;
+        align-items: center;
     }
+    
     }
 @media(max-width:999px) {
     #robo{
         display: none;
      }
+    .fase{
+        width: 400px;
+        background-color: #c3cfff;
+        color: #fff;
+        padding: 5px 0;
+        margin: 10px;
+        display: inline;
+        text-align: center;
+        padding-top: 20px;
+        transition: .3s;
+        cursor: pointer;
+    }
     .center{
         align-content: center;
         margin: 7% auto;
