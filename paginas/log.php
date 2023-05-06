@@ -7,22 +7,25 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-   $sql = "SELECT * FROM cadastro WHERE email = '$email' and senha = '$senha'";
+    $sql_code = "SELECT * FROM cadastro WHERE email='$email' LIMIT 1;";
+    $sql_exec = $conexao->query($sql_code) or die($conexao->error);
 
-   $result = $conexao->query($sql);
+    $usuario = $sql_exec->fetch_assoc();
 
-   if(mysqli_num_rows($result)<1){
-    unset($_SESSION['email']);
-    unset($_SESSION['senha']);
-    header('location:login.html');
-   }
-   else{    
+   if(password_verify($senha, $usuario['senha'])){
     $_SESSION['email']= $email;
     $_SESSION['senha']=$senha;
     header('location:telaInicial.php');
    }
+   else{    
+    unset($_SESSION['email']);
+    unset($_SESSION['senha']);
+    header('location:login.html');
+   }
+
 }
 else{
     header('location:login.html');
 }
+
 ?>
