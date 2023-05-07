@@ -14,12 +14,12 @@
   }
   
   nav li a:hover {
-    opacity: 0.6;
+    opacity: 0.8;
     transform: scale(1.03);
   }
   
   .logo {
-    font-size: 24px;
+    font-size: 27px;
     text-transform: uppercase;
     letter-spacing: 4px;
   }

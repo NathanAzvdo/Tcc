@@ -43,12 +43,11 @@ input{
     display: flex;
     flex-direction: row;
     padding: 30px;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 6% auto 7%;
-    margin-right: auto;
     align-content: center;
     text-align: center;
-    width: 70%;
+    width: 90vw;
 }
 
 #robo{

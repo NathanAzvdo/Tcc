@@ -53,41 +53,37 @@ while($USER_DATA = mysqli_fetch_assoc($result))
 
   <div class="center">
     <img src="img/Robo.png" id="robo">
-    
 
-      <div class="ranking">
-        <h1>Ranking <img src="img/trofeu-removebg-preview.png" alt="" width="30px" height="30px"></h1>
+    <div class="ranking">
+      <h1>Ranking <img src="img/trofeu-removebg-preview.png" alt="" width="30px" height="30px"></h1>
       <br>
       <img src="img/primeiro-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
-      <br>
       <br>
       <div class="rankName"><?php
       echo $nomes[0];
       ?></div>
       <img src="img/segundo-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
       <br>
-      <br>
       <div class="rankName"><?php
       echo $nomes[1];
       ?></div>
       <img src="img/terceiro-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
-      <br>
       <br>
       <div class="rankName"><?php
       echo $nomes[2];
       ?></div>
       <img src="img/quarto2-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
       <br>
-      <br>
       <div class="rankName"><?php
       echo $nomes[3];
       ?></div>
       <img src="img/quinto-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
       <br>
-      <br>
       <div class="rankName"><?php
       echo $nomes[4];
       ?></div>
+    </div>
+
     </div>
     
   </div>
