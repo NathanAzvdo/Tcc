@@ -15,11 +15,12 @@ input{
      width: 300px;
    }
 .fases{
-    width: 900px;
-    margin: 0 20px;
+    margin: 15% auto;
+    text-align: center;
+    width: 90vw;
 }
 .fase{
-    width: 350px;
+    width: 700px;
     background-color: #c3cfff;
     color: #fff;
     padding: 5px 0;
@@ -27,7 +28,7 @@ input{
     display: inline-block;
     text-align: center;
     padding-top: 20px;
-    transition: .3s;
+    transition: .5s;
     cursor: pointer;
 }
 .title-fase{
@@ -36,15 +37,15 @@ input{
 
 }
 .fase:hover{
-    transform: scale(1.02);
+    transform: scale(1.01);
     border: 1px solid #3852b5;
 }
  .center{
     display: flex;
     flex-direction: row;
     padding: 30px;
-    justify-content: space-evenly;
-    margin: 6% auto 7%;
+    justify-content: center;
+    margin: 10% auto 7%;
     align-content: center;
     text-align: center;
     width: 90vw;

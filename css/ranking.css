@@ -5,13 +5,29 @@
 .ranking{
     background-color: #c3cfff41;
     width: 500px;
+    height: 620px;
     text-align: center;
-    margin:0 20px ;
+    margin:0 auto;
   
+}
+.first img, .second img, .third img{
+    width: 130px;
+    margin: 10px auto;
+}
+.second, .third{
+    display: inline-block;
+    margin: 50px 30px;
+}
+
+.third{
+    transform: translateY(100px);
+}
+.topTres{
+    width: 50%;
 }
 .rankName{
     width: 300px;
-    margin: 0 auto;
+    margin: 1.5% auto;
     background-color: #c3cfff;
     height: 30px;
     color: #fff;
@@ -21,13 +37,10 @@
     justify-content: center;
 }
 .ranking h1{
-    
-    position: relative;
-   
-   color: #3852B5;
-   font-size: 40px;
-   text-align: center;
-   
+    color: #3852B5;
+    font-size: xxx-large;
+    margin-top: 10px ;
+    text-align: center;
 }
 @media(max-width:1230px){
     .ranking{

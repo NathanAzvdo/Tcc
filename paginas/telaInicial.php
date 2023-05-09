@@ -8,7 +8,7 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
 
 }
 $email = $_SESSION['email'];
-$sql = "SELECT nome_usuario FROM cadastro order by ranking DESC LIMIT 5";
+$sql = "SELECT nome_usuario FROM cadastro order by ranking DESC LIMIT 8";
 $result = $conexao->query($sql);
 $nomes = [];
 $cont=0;
@@ -58,12 +58,79 @@ while($USER_DATA = mysqli_fetch_assoc($result))
     </nav>
   </header>
   <script src="../js/menu.js"></script>
+
+  
+  
+  
+  
+  
+  
   
   <div class="center">
 
-    <div class="fases">
-    <div class="fase"><div class="title-fase">Fase1</div><br>Comandos de entrada e operadores</div>
-    <div class="fase"><div class="title-fase">Fase2</div><br>Váriaveis</div>
+    <div class="topTres">
+      <div class="first">
+        <img src="../img/brilhoprim.png" style="width:80px; transform: scaleX(-1);">
+        <img src="../img/primeiro-removebg-preview.png">
+        <img src="../img/brilhoprim.png" style="width:80px;">
+        <div class="rankName"><?php echo $nomes[0]; ?></div>
+      </div>
+
+
+      <div class="second">
+        <img src="../img/segundo-removebg-preview.png">
+        <div class="rankName"><?php echo $nomes[1]; ?></div>
+      </div>
+
+      <div class="third">
+      <img src="../img/terceiro-removebg-preview.png">
+        <div class="rankName"><?php echo $nomes[2]; ?></div>
+      </div>
+
+
+    
+    
+  
+    </div>
+  
+    
+    <div class="ranking">
+      <h1>Ranking <img src="../img/trofeu-removebg-preview.png" alt="" width="30px" height="30px"></h1>
+      <br>
+      <img src="../img/quarto2-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
+      <br>
+      <div class="rankName"><?php
+      echo $nomes[3];
+      ?></div>
+      <img src="../img/quinto-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
+      <br>
+      <div class="rankName"><?php
+      echo $nomes[4];
+      ?></div>
+      <img src="../img/sexto-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
+      <br>
+      <div class="rankName"><?php
+      echo $nomes[5];
+      ?></div>
+      <img src="../img/setimo-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
+      <br>
+      <div class="rankName"><?php
+      echo $nomes[6];
+      ?></div>
+      <img src="../img/oitavo-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
+      <br>
+      <div class="rankName"><?php
+      echo $nomes[7];
+      ?></div>
+    </div>
+  
+</div>
+
+
+
+  <div class="fases">
+    <div class="fase"><div class="title-fase">Fase1</div><br>Váriaveis</div>
+    <div class="fase"><div class="title-fase">Fase2</div><br>Comandos de entrada e operadores</div>
     <div class="fase"><div class="title-fase">Fase3</div><br>Operadores lógicos e relacionais</div>
     <div class="fase"><div class="title-fase">Fase4</div><br>Estruturas Condicionais</div>
     <div class="fase"><div class="title-fase">Fase5</div><br>Estruturadas de Repetição</div>
@@ -71,40 +138,7 @@ while($USER_DATA = mysqli_fetch_assoc($result))
     <div class="fase"><div class="title-fase">Fase7</div><br>Funções</div>
     <div class="fase"><div class="title-fase">Fase8</div><br>Vetores</div>
     <div class="fase"><div class="title-fase">Fase9</div><br>Matrizes</div>
-    </div>
-  
-    
-    <div class="ranking">
-      <h1>Ranking <img src="../img/trofeu-removebg-preview.png" alt="" width="30px" height="30px"></h1>
-      <br>
-      <img src="../img/primeiro-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
-      <br>
-      <div class="rankName"><?php
-      echo $nomes[0];
-      ?></div>
-      <img src="../img/segundo-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
-      <br>
-      <div class="rankName"><?php
-      echo $nomes[1];
-      ?></div>
-      <img src="../img/terceiro-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
-      <br>
-      <div class="rankName"><?php
-      echo $nomes[2];
-      ?></div>
-      <img src="../img/quarto2-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
-      <br>
-      <div class="rankName"><?php
-      echo $nomes[3];
-      ?></div>
-      <img src="../img/quinto-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
-      <br>
-      <div class="rankName"><?php
-      echo $nomes[4];
-      ?></div>
-    </div>
-  
-</div>
+  </div>
     
     
 
