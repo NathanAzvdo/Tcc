@@ -62,19 +62,102 @@ while($USER_DATA = mysqli_fetch_assoc($result))
   
   
   
-  
-  
-  <div class="fases">
-    <div class="fase"><div class="title-fase">Fase1</div><br>Váriaveis</div>
-    <div class="fase"><div class="title-fase">Fase2</div><br>Comandos de entrada e operadores</div>
-    <div class="fase"><div class="title-fase">Fase3</div><br>Operadores lógicos e relacionais</div>
-    <div class="fase"><div class="title-fase">Fase4</div><br>Estruturas Condicionais</div>
-    <div class="fase"><div class="title-fase">Fase5</div><br>Estruturadas de Repetição</div>
-    <div class="fase"><div class="title-fase">Fase6</div><br>Procedimentos</div>
-    <div class="fase"><div class="title-fase">Fase7</div><br>Funções</div>
-    <div class="fase"><div class="title-fase">Fase8</div><br>Vetores</div>
-    <div class="fase"><div class="title-fase">Fase9</div><br>Matrizes</div>
-  </div>
+          <div class="ag-format-container">
+            <div class="ag-courses_box">
+              <div class="ag-courses_item">
+                <a href="#" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+
+                  <div class="ag-courses-item_title">
+                  Váriaveis
+                  </div>
+                </a>
+              </div>
+
+              <div class="ag-courses_item">
+                <a href="#" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+
+                  <div class="ag-courses-item_title">
+                    Comandos de entrada e operadores
+                  </div>
+
+                </a>
+              </div>
+
+              <div class="ag-courses_item">
+                <a href="#" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+
+                  <div class="ag-courses-item_title">
+                  Operadores lógicos e relacionais
+                  </div>
+                </a>
+              </div>
+
+              <div class="ag-courses_item">
+                <a href="#" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+
+                  <div class="ag-courses-item_title">
+                    Estruturas Condicionais
+                  </div>
+                </a>
+              </div>
+
+              <div class="ag-courses_item">
+                <a href="#" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+
+                  <div class="ag-courses-item_title">
+                    Estruturadas de Repetição
+                  </div>
+                </a>
+              </div>
+
+              <div class="ag-courses_item">
+                <a href="#" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+
+                  <div class="ag-courses-item_title">
+                    Procedimentos
+                  </div>
+                </a>
+              </div>
+
+              <div class="ag-courses_item">
+                <a href="#" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg">
+                  </div>
+                  <div class="ag-courses-item_title">
+                    Funções
+                  </div>
+                </a>
+              </div>
+
+              <div class="ag-courses_item">
+                <a href="#" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+
+                  <div class="ag-courses-item_title">
+                    Vetores
+                  </div>
+                </a>
+              </div>
+
+              <div class="ag-courses_item">
+                <a href="#" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+
+                  <div class="ag-courses-item_title">
+                  Matrizes
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
   
   <div class="center">
 

@@ -37,17 +37,19 @@
         <div class="title">Faça seu cadastro:</div>
         <form action="cad.php" method="POST">
           <label for="nome">Nome de Usuário:</label><br>
-          <input type="text" name="nome" id="nome"br><br>
+          <input type="text" name="nome" id="nome" maxLength="50"><br>
           <label for="email">Email:</label><br>
-          <input type="email" name="email" id="email"><br>
+          <input type="email" name="email" id="email" oninput="validarEmail()"><br>
           <label for="senha">Senha:</label><br>
-          <input type="password" name="senha" id="senha"><br>
+          <input type="password" name="senha" id="senha" oninput="validarSenha()"><br>
           <label for="Confsenha">Confirme a senha:</label><br>
-          <input type="password" name="confsenha" id="confsenha"><br>
+          <input type="password" name="confsenha" id="confsenha" oninput="validarSenha()"><br>
           <div style="text-align:center;">
+            <div id="display"></div>
           <button type="submit" value="enviar" id="btn">Enviar</button>
           </div>
         </form>
+        <script src="../js/validacao.js"></script>
       </div>
       <div class="img">
         <img src="../img/roboLupa.png">

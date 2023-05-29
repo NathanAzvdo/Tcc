@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&family=Ubuntu:wght@300&display=swap');
+
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+body{
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+#display{
+  font-size: large;
+  color: #586299;
 }
 .center{
     display: flex;
@@ -84,6 +94,8 @@ form input{
    width: 550px;
    height: 40px;
    margin: 5px auto 15px;
+   outline: none;
+   border: none;
  }
 .title{
   font-size:2.5rem;
