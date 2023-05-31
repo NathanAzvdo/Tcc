@@ -45,7 +45,18 @@
           <label for="Confsenha">Confirme a senha:</label><br>
           <input type="password" name="confsenha" id="confsenha" oninput="validarSenha()"><br>
           <div style="text-align:center;">
-            <div id="display"></div>
+            <div id="display">
+            <?php
+            if (isset($_GET['erro'])) {
+               if ($_GET['erro'] == "email") {
+                 echo "Email já utilizado"; }
+               }
+            if (isset($_GET['erro'])) {
+              if ($_GET['erro'] == "nome") {
+                  echo "Nome de usuário já utilizado"; }
+                }
+            ?>
+            </div>
           <button type="submit" value="enviar" id="btn">Enviar</button>
           </div>
         </form>

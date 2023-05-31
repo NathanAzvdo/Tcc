@@ -55,7 +55,7 @@
             ?>
           </div>  
           <input type="submit" name="submit" value="Logar" id="btn"><br>
-            <a href="Cadastro.html">Cadastre-se aqui</a>
+            <a href="Cadastro.php">Cadastre-se aqui</a>
           </div>
         </form>
       </div>
