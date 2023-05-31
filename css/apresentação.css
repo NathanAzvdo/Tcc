@@ -22,6 +22,8 @@ input{
   }
   .ag-courses_item:hover{
     transform: scale(1.01);
+     box-shadow: 4px 4px 4px 1.8px rgba(0, 0, 0, 0.19);
+
   }
   .ag-courses_box {
     display: -webkit-box;

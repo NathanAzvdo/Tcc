@@ -60,7 +60,65 @@ while($USER_DATA = mysqli_fetch_assoc($result))
   <script src="../js/menu.js"></script>
 
   
+  <div class="center">
+
+    <div class="topTres">
+      <div class="first">
+        <img src="../img/brilhoprim.png" style="width:80px; transform: scaleX(-1);">
+        <img src="../img/primeiro-removebg-preview.png">
+        <img src="../img/brilhoprim.png" style="width:80px;">
+        <div class="rankName"><?php echo $nomes[0]; ?></div>
+      </div>
+
+
+      <div class="second">
+        <img src="../img/segundo-removebg-preview.png">
+        <div class="rankName"><?php echo $nomes[1]; ?></div>
+      </div>
+
+      <div class="third">
+      <img src="../img/terceiro-removebg-preview.png">
+        <div class="rankName"><?php echo $nomes[2]; ?></div>
+      </div>
+
+
+    
+    
   
+    </div>
+  
+    
+    <div class="ranking">
+      <h1>Ranking <img src="../img/trofeu-removebg-preview.png" alt="" width="30px" height="30px"></h1>
+      <br>
+      <img src="../img/quarto2-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
+      <br>
+      <div class="rankName"><?php
+      echo $nomes[3];
+      ?></div>
+      <img src="../img/quinto-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
+      <br>
+      <div class="rankName"><?php
+      echo $nomes[4];
+      ?></div>
+      <img src="../img/sexto-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
+      <br>
+      <div class="rankName"><?php
+      echo $nomes[5];
+      ?></div>
+      <img src="../img/setimo-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
+      <br>
+      <div class="rankName"><?php
+      echo $nomes[6];
+      ?></div>
+      <img src="../img/oitavo-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
+      <br>
+      <div class="rankName"><?php
+      echo $nomes[7];
+      ?></div>
+    </div>
+  
+</div>
   
           <div class="ag-format-container">
             <div class="ag-courses_box">
@@ -159,65 +217,7 @@ while($USER_DATA = mysqli_fetch_assoc($result))
           </div>
 
   
-  <div class="center">
-
-    <div class="topTres">
-      <div class="first">
-        <img src="../img/brilhoprim.png" style="width:80px; transform: scaleX(-1);">
-        <img src="../img/primeiro-removebg-preview.png">
-        <img src="../img/brilhoprim.png" style="width:80px;">
-        <div class="rankName"><?php echo $nomes[0]; ?></div>
-      </div>
-
-
-      <div class="second">
-        <img src="../img/segundo-removebg-preview.png">
-        <div class="rankName"><?php echo $nomes[1]; ?></div>
-      </div>
-
-      <div class="third">
-      <img src="../img/terceiro-removebg-preview.png">
-        <div class="rankName"><?php echo $nomes[2]; ?></div>
-      </div>
-
-
-    
-    
   
-    </div>
-  
-    
-    <div class="ranking">
-      <h1>Ranking <img src="../img/trofeu-removebg-preview.png" alt="" width="30px" height="30px"></h1>
-      <br>
-      <img src="../img/quarto2-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
-      <br>
-      <div class="rankName"><?php
-      echo $nomes[3];
-      ?></div>
-      <img src="../img/quinto-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
-      <br>
-      <div class="rankName"><?php
-      echo $nomes[4];
-      ?></div>
-      <img src="../img/sexto-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
-      <br>
-      <div class="rankName"><?php
-      echo $nomes[5];
-      ?></div>
-      <img src="../img/setimo-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
-      <br>
-      <div class="rankName"><?php
-      echo $nomes[6];
-      ?></div>
-      <img src="../img/oitavo-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
-      <br>
-      <div class="rankName"><?php
-      echo $nomes[7];
-      ?></div>
-    </div>
-  
-</div>
     
     
 

@@ -14,7 +14,7 @@
     VALUES (default, '$nom', '$email', default, '$hash');";
   
     if(mysqli_query($conexao, $result)){
-      header('location:login.html');
+      header('location:login.php');
     }
     else{
       echo "error:" .$result ."<br>". mysqli_error($conexao);

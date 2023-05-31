@@ -21,7 +21,7 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
    else{    
     unset($_SESSION['email']);
     unset($_SESSION['senha']);
-    header('location:login.html');
+    header('location:login.php?erro=dadoserrado');
    }
 
 }

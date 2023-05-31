@@ -41,7 +41,7 @@ while($USER_DATA = mysqli_fetch_assoc($result))
       </div>
       <ul class="nav-list">
         <li><a href="#">Jogos</a></li>
-        <li><a href="paginas/login.html">Login</a></li>
+        <li><a href="paginas/login.php">Login</a></li>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre nós</a></li>
         <li><a href="#">Teste</a></li>
@@ -90,7 +90,7 @@ while($USER_DATA = mysqli_fetch_assoc($result))
 
   
   <div class="comeceaqui">
-    <a href="paginas/login.html"><img src="img/comeceaqui.jpg" alt="" width="100%"></a>
+    <a href="paginas/login.php"><img src="img/comeceaqui.jpg" alt="" width="100%"></a>
   </div>
 
   

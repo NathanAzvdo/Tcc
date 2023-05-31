@@ -28,7 +28,7 @@ function validarSenha(){
         display.innerHTML = "";
         senha.style.border="none"
         confsenha.style.border="none";
-        if (email.value.match(/[^\s@]+@[^\s@]+\.[^\s@]+/gi)) {
+        if (email.value.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
             btn.style.display="block";
             email.style.border="none";    
         }

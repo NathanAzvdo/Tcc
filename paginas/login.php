@@ -46,7 +46,15 @@
           <label for="nome">Senha:</label><br>
           <input type="password" name="senha" id="senha"><br>
           <div style="text-align:center">
-            <input type="submit" name="submit" value="Logar" id="btn"><br>
+          <div id="display">
+            <?php
+            if (isset($_GET['erro'])) {
+               if ($_GET['erro'] == "dadoserrado") {
+                 echo "Login inválido!"; }
+               }
+            ?>
+          </div>  
+          <input type="submit" name="submit" value="Logar" id="btn"><br>
             <a href="Cadastro.html">Cadastre-se aqui</a>
           </div>
         </form>
