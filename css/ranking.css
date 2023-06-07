@@ -10,6 +10,11 @@
     margin:0 auto;
   
 }
+.ranking h1{
+    color: #3852B5;
+    font-size: xxx-large;
+    text-align: center;
+}
 .first img, .second img, .third img{
     width: 130px;
     margin: 10px auto;
@@ -24,6 +29,7 @@
 }
 .topTres{
     width: 50%;
+    margin: 0 auto;
 }
 .rankName{
     width: 300px;
@@ -36,10 +42,10 @@
     align-items: center;
     justify-content: center;
 }
-.ranking h1{
+.title-rank{
     color: #3852B5;
-    font-size: xxx-large;
-    margin-top: 10px ;
+    font-size: xx-large;
+    margin-top: 13vh ;
     text-align: center;
 }
 @media(max-width:1230px){
@@ -56,13 +62,30 @@
     }
  
 }
+@media(max-width:804px) {
+    .first{
+        display: flex;
+        flex-direction: column;
+    }
+    #first{
+        display: flex;
+        flex-direction: row;
+    }
+    .topTres{
+        margin-bottom: 5vh;
+    }
+ 
+}
 @media(max-width:700px){
     .ranking{
     width: 100%;
    }
+   .third{
+    transform: translateY(0px);
+   }
 }
 @media(max-width:550px){
-    .ranking{
-    width: 95%;
+   .rankName{
+    width: 80%;
    }
 }

@@ -59,14 +59,19 @@ while($USER_DATA = mysqli_fetch_assoc($result))
   </header>
   <script src="../js/menu.js"></script>
 
-  
-  <div class="center">
+  <div class="title-rank">
+    <h1>Ranking <img src="../img/trofeu-removebg-preview.png" alt="" width="50px" height="50px"></h1>
+  </div>
+
+  <div class="center" style="margin-top:5%;">
 
     <div class="topTres">
       <div class="first">
+        <div id="first">
         <img src="../img/brilhoprim.png" style="width:80px; transform: scaleX(-1);">
         <img src="../img/primeiro-removebg-preview.png">
-        <img src="../img/brilhoprim.png" style="width:80px;">
+        <img src="../img/brilhoprim.png" style="width:80px;"><br>
+        </div>  
         <div class="rankName"><?php echo $nomes[0]; ?></div>
       </div>
 
@@ -89,7 +94,6 @@ while($USER_DATA = mysqli_fetch_assoc($result))
   
     
     <div class="ranking">
-      <h1>Ranking <img src="../img/trofeu-removebg-preview.png" alt="" width="30px" height="30px"></h1>
       <br>
       <img src="../img/quarto2-removebg-preview.png" alt="" width="40px" height="40px" style="margin-top: 5px;">
       <br>
@@ -122,6 +126,17 @@ while($USER_DATA = mysqli_fetch_assoc($result))
   
           <div class="ag-format-container">
             <div class="ag-courses_box">
+              
+              <div class="ag-courses_item">
+                <a href="Visualg.php" class="ag-courses-item_link">
+                  <div class="ag-courses-item_bg"></div>
+
+                  <div class="ag-courses-item_title">
+                  introdução
+                  </div>
+                </a>
+              </div>
+            
               <div class="ag-courses_item">
                 <a href="#" class="ag-courses-item_link">
                   <div class="ag-courses-item_bg"></div>

@@ -63,3 +63,12 @@ footer{
         font-size: small;
     }
 }
+@media(max-width:500px){
+    footer{
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+}
