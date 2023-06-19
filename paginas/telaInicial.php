@@ -31,6 +31,7 @@ while($USER_DATA = mysqli_fetch_assoc($result))
   <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/ranking.css">
   <link rel="stylesheet" href="../css/footer.css">
+  <link rel="styleshet" href="../css/jogos.css">
   
   <link rel="icon" href="../img/icon.png">
 
@@ -138,7 +139,7 @@ while($USER_DATA = mysqli_fetch_assoc($result))
               </div>
             
               <div class="ag-courses_item">
-                <a href="#" class="ag-courses-item_link">
+                <a href="variaveis.html" class="ag-courses-item_link">
                   <div class="ag-courses-item_bg"></div>
 
                   <div class="ag-courses-item_title">

@@ -19,6 +19,7 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/visualg.css">
     <title>CodeGenious - introdução</title>
 </head>
@@ -228,6 +229,26 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
         <p>No Visualg, a palavra reservada "FimAlgoritmo" marca o fim do bloco principal do seu algoritmo. É dentro desse bloco que você escreve as instruções que serão executadas sequencialmente.</p>
         <p>O bloco "FimAlgoritmo" indica ao Visualg que não há mais instruções para serem executadas no escopo principal do algoritmo. Ele encerra o bloco principal e sinaliza o fim do programa.</p>
     </div>
+
+    <footer>
+    <div class="footer-content">
+      <div class="imgFooter" id="florFooter">
+        <img src="../img/flor.png" id="imgFlor">
+      </div>
+      
+      <div class="textFooter">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus consequatur rerum deserunt dignissimos quasi facilis repellat odio tempora, recusandae quos ratione, ullam dolore fugit laboriosam facere. Tenetur doloremque labore nihil!
+      </div>
+      
+      
+
+      <div class="imgFooter">
+        <img src="../img/roboLupa.png" id="roboFooter">
+      </div>
+
+
+    </div>
+  </footer>
 </body>
 
 </html>

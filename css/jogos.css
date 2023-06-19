@@ -1,0 +1,73 @@
+/*Classes utilizadas em vários jogos */
+body{
+    background-color: #E2EAF8;
+}
+.divsLadoaLado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height:95vh;
+    margin: 5vh auto 8vh;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.titulo {
+    margin-top: 15vh;
+    text-align: center;
+    color: #3852B5;
+    font-size: xxx-large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.titulo img{
+    width: 50px;
+}
+
+
+
+/*jogo 1*/
+
+.title-quest{
+    width: 580px;
+    background-color: #E2EAF8;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: x-large;
+    color: #3852B5;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+.personagem img{
+    width: 400px;
+}
+.opcao{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 23px auto;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 500px;
+    transition: .3s;
+    font-size: large;
+}
+.opcao:hover{
+    transform: scale(1.03);
+    box-shadow: 3px 3px 3px 1.8px rgba(0, 0, 0, 0.16);
+}
+.opcao img{
+    width: 60px;
+    margin: 0 10px;
+}
+.questao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
