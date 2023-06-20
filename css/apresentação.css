@@ -3,6 +3,23 @@
     padding: 0px;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
+.anima{
+    
+  animation-name: animation;
+  animation-duration: 1.5s;
+
+}
+
+@keyframes animation{
+  from {
+      transform: translateY(-200px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
 
 
 input{
@@ -164,7 +181,7 @@ input{
     flex-direction: row;
     padding: 30px;
     justify-content: center;
-    margin: 10% auto 7%;
+    margin: 6% auto 7%;
     align-content: center;
     text-align: center;
     width: 90vw;

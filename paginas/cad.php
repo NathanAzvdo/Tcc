@@ -22,7 +22,7 @@
   }
   else{
     $result = "INSERT INTO cadastro
-    VALUES (default, '$nom', '$email', default, '$hash');";
+    VALUES (default, '$nom', '$email', default, '$hash', '0');";
   
     if(mysqli_query($conexao, $result)){
       header('location:login.php');

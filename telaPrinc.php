@@ -50,13 +50,14 @@ while($USER_DATA = mysqli_fetch_assoc($result))
   </header>
   <script src="js/menu.js"></script>
  
+  <div class="anima">
 
-  <div class="center">
-    <img src="img/Robo.png" id="robo">
+    <div class="center">
+      <img src="img/Robo.png" id="robo">
 
-    <div class="ranking">
-      <h1>Ranking <img src="img/trofeu-removebg-preview.png" alt="" width="30px" height="30px"></h1>
-      <br>
+      <div class="ranking">
+        <h1>Ranking <img src="img/trofeu-removebg-preview.png" alt="" width="30px" height="30px"></h1>
+        <br>
       <img src="img/primeiro-removebg-preview.png" alt="" width="30px" height="30px" style="margin-top: 5px;">
       <br>
       <div class="rankName"><?php
@@ -84,14 +85,15 @@ while($USER_DATA = mysqli_fetch_assoc($result))
       ?></div>
     </div>
 
-    </div>
-    
   </div>
-
+  
+  
   
   <div class="comeceaqui">
     <a href="paginas/login.php"><img src="img/comeceaqui.jpg" alt="" width="100%"></a>
   </div>
+</div>
+
 
   
   

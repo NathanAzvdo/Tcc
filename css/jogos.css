@@ -2,6 +2,77 @@
 body{
     background-color: #E2EAF8;
 }
+.btnEnviar{
+    margin: 0 auto 10vh;
+    text-align: center;
+}
+.anima{
+    
+    animation-name: animation;
+    animation-duration: 1.5s;
+  
+  }
+  
+  @keyframes animation{
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  .anima2{
+    
+    animation-name: animation2;
+    animation-duration: 1.5s;
+  
+  }
+  
+  @keyframes animation2{
+    from {
+        transform: translatex(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
+  .anima3{
+    
+    animation-name: animation3;
+    animation-duration: 1.5s;
+  
+  }
+  
+  @keyframes animation3{
+    from {
+        transform: translatex(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+.btnEnviar button{
+    width: 400px;
+    padding: 15px;
+    background-color: #677f27;
+    color: #fff;
+    font-size: xx-large;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.btnEnviar button:hover{
+    transform: scale(1.05);
+}
 .divsLadoaLado{
     display: flex;
     flex-direction: row;
@@ -26,6 +97,84 @@ body{
 }
 .titulo img{
     width: 50px;
+}
+#cinco-estrelas{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+#tres-estrelas{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+#uma-estrela{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.cincoE img{
+    width: 500px;
+}
+.cincoE{
+    margin-top: 20px;
+}
+.estrela{
+    width: 90px;
+}
+.trofeu img{
+    width: 400px;
+}
+.pop-up{
+    width: 60vw;
+    height:60vh;
+    margin: 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.prox button{
+    background-color: #c6d6f7;
+    color: #3852B5;
+    font-size: xx-large;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    cursor: pointer;
+    transition: .4s;
+}
+.prox button:hover{
+    transform: scale(1.05);
+}
+.prox{
+    width: 80%;
+    text-align: right;
+    margin-top: 50px;
 }
 
 
@@ -71,3 +220,53 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
+/*matrizes*/
+
+.board {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    gap:4px;
+    margin-top: 40px;
+    }
+  .jogo button{
+    width: 400px;
+    padding: 15px;
+    background-color: #677f27;
+    color: #fff;
+    font-size: xx-large;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: .3s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+  .jogo{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    align-content: center;
+  }
+  .board div {
+      border: 4px solid #ED9AC2;
+      width: 170px;
+      height: 170px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      cursor: pointer;
+      color: #000000;
+    }
+
+  
+  .clear {
+      clear: both;
+  }

@@ -59,14 +59,15 @@ while($USER_DATA = mysqli_fetch_assoc($result))
     </nav>
   </header>
   <script src="../js/menu.js"></script>
+  <div class="anima">
 
-  <div class="title-rank">
-    <h1>Ranking <img src="../img/trofeu-removebg-preview.png" alt="" width="50px" height="50px"></h1>
+    <div class="title-rank">
+      <h1>Ranking <img src="../img/trofeu-removebg-preview.png" alt="" width="50px" height="50px"></h1>
   </div>
-
+  
   <div class="center" style="margin-top:5%;">
-
-    <div class="topTres">
+    
+  <div class="topTres">
       <div class="first">
         <div id="first">
         <img src="../img/brilhoprim.png" style="width:80px; transform: scaleX(-1);">
@@ -81,18 +82,18 @@ while($USER_DATA = mysqli_fetch_assoc($result))
         <img src="../img/segundo-removebg-preview.png">
         <div class="rankName"><?php echo $nomes[1]; ?></div>
       </div>
-
+      
       <div class="third">
       <img src="../img/terceiro-removebg-preview.png">
         <div class="rankName"><?php echo $nomes[2]; ?></div>
       </div>
 
-
+      
     
     
-  
+      
     </div>
-  
+    
     
     <div class="ranking">
       <br>
@@ -122,24 +123,25 @@ while($USER_DATA = mysqli_fetch_assoc($result))
       echo $nomes[7];
       ?></div>
     </div>
-  
+    
+</div>
 </div>
   
-          <div class="ag-format-container">
-            <div class="ag-courses_box">
-              
-              <div class="ag-courses_item">
+<div class="ag-format-container">
+  <div class="ag-courses_box">
+    
+    <div class="ag-courses_item">
                 <a href="Visualg.php" class="ag-courses-item_link">
                   <div class="ag-courses-item_bg"></div>
 
                   <div class="ag-courses-item_title">
-                  introdução
+                  introdução ao VisualG
                   </div>
                 </a>
               </div>
             
               <div class="ag-courses_item">
-                <a href="variaveis.html" class="ag-courses-item_link">
+                <a href="variaveis.php" class="ag-courses-item_link">
                   <div class="ag-courses-item_bg"></div>
 
                   <div class="ag-courses-item_title">
@@ -149,28 +151,18 @@ while($USER_DATA = mysqli_fetch_assoc($result))
               </div>
 
               <div class="ag-courses_item">
-                <a href="#" class="ag-courses-item_link">
+                <a href="comandoEnt.php" class="ag-courses-item_link">
                   <div class="ag-courses-item_bg"></div>
 
                   <div class="ag-courses-item_title">
-                    Comandos de entrada e operadores
+                    Comandos de entrada e Operadores
                   </div>
 
                 </a>
               </div>
 
               <div class="ag-courses_item">
-                <a href="#" class="ag-courses-item_link">
-                  <div class="ag-courses-item_bg"></div>
-
-                  <div class="ag-courses-item_title">
-                  Operadores lógicos e relacionais
-                  </div>
-                </a>
-              </div>
-
-              <div class="ag-courses_item">
-                <a href="#" class="ag-courses-item_link">
+                <a href="estCond.php" class="ag-courses-item_link">
                   <div class="ag-courses-item_bg"></div>
 
                   <div class="ag-courses-item_title">
@@ -180,7 +172,7 @@ while($USER_DATA = mysqli_fetch_assoc($result))
               </div>
 
               <div class="ag-courses_item">
-                <a href="#" class="ag-courses-item_link">
+                <a href="estRep.php" class="ag-courses-item_link">
                   <div class="ag-courses-item_bg"></div>
 
                   <div class="ag-courses-item_title">
@@ -220,7 +212,7 @@ while($USER_DATA = mysqli_fetch_assoc($result))
               </div>
 
               <div class="ag-courses_item">
-                <a href="#" class="ag-courses-item_link">
+                <a href="jogoMatrizes.php" class="ag-courses-item_link">
                   <div class="ag-courses-item_bg"></div>
 
                   <div class="ag-courses-item_title">

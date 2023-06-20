@@ -1,6 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
+}
+body{
+    background-color: #E2EAF8;
 }
 
 .titulo {
@@ -12,6 +20,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 .titulo img{
     width: 30px;
@@ -19,49 +28,74 @@
 .eng{
     transform: translateY(-10px);
 }
-.paragrafo {
+.paragrafo{
     text-align: justify;
-    color: #0547ff;
-    width: 90vw;
-    font-size: large;
-    word-spacing: 5px;
-    line-height: 22px;
-    text-indent: 10px;
-    margin: 5vh auto;
+    color: #000000;
+    width: 70%;
+    font-size: 1.4rem;
+    text-indent: 2rem;
+    margin: 2vh auto 5vh;
+    font-family: 'Open Sans', sans-serif;
 }
-
+.subText{
+    text-indent: 0px;
+    text-align: left;
+    color: #3852B5;
+    font-size: 1.8rem;
+    margin: 4vh 0% 1% 1.5%;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
 .subtitulo {
-    font-size: 20px;
-    color: #0547ff;
-    border-radius: 20px;
+    text-align: left;
+    color: #3852B5;
+    font-size: 2.6rem;
     margin-top: 4vh;
     display: flex;
-    justify-content: center;
+    width: 70%;
+    justify-content: left;
     align-items: center;
     padding: 10px;
-    width: 160px;
-    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
-    background-color: #E2EAF8;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
 .exemplo {
-    background-color: #C3CFFF;
+    
     border-radius: 20px;
     width: 60vw;
     margin: 5vh auto;
+    border: solid #3852B5;
     color: #0547ff;
     word-spacing: 4px;
-    padding: 15px;
+    padding: 3% 15px;
+    font-size: x-large;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .sessoes {
-    margin: 2vw 20px;
+    margin: 0% 20px 2%;
 }
 
 .codigo {
     margin-left: 40px;
+}
+#btnjog{
+    margin: 0 auto;
+    width: 250px;
+    padding: 7px;
+    background-color: #677f27;
+    color: #fff;
+    font-size: x-large;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.btnjog{
+    margin: 0 auto 7vh;
+    text-align: center;
 }
