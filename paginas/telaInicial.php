@@ -50,7 +50,7 @@ while($USER_DATA = mysqli_fetch_assoc($result))
         <div class="line3"></div>
       </div>
       <ul class="nav-list">
-        <li><a href="#">Jogos</a></li>
+        <li><a href="telaInicial.php#jogosDiv">Jogos</a></li>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre nós</a></li>
         <li><a href="#">Teste</a></li>
@@ -127,20 +127,39 @@ while($USER_DATA = mysqli_fetch_assoc($result))
 </div>
 </div>
   
-<div class="ag-format-container">
+<div class="ag-format-container" id="jogosDiv">
   <div class="ag-courses_box">
-    
-    <div class="ag-courses_item">
-                <a href="Visualg.php" class="ag-courses-item_link">
-                  <div class="ag-courses-item_bg"></div>
+  <?php
+        
+        session_start();
+        include_once('config.php');
+        $email = $_SESSION['email'];
+        
+        // Executa a consulta SQL
+        $sql = "SELECT nivel FROM cadastro WHERE email = '{$email}'";
+        $resultado = mysqli_query($conexao, $sql);
+        
+        if (!$resultado) {
+            die("Erro na consulta: " . mysqli_error($conexao));
+        }
+        
+        // Obtém o valor retornado pela consulta
+        if ($linha = mysqli_fetch_assoc($resultado)) {
+            $nivel = $linha['nivel'];
+        }
+       
+        if ($nivel >=0 ) {
+          echo '<div class="ag-courses_item">
+          <a href="Visualg.php" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
 
-                  <div class="ag-courses-item_title">
-                  introdução ao VisualG
-                  </div>
-                </a>
-              </div>
-            
-              <div class="ag-courses_item">
+            <div class="ag-courses-item_title">
+            introdução ao VisualG
+            </div>
+          </a>
+        </div>
+        
+        <div class="ag-courses_item">
                 <a href="variaveis.php" class="ag-courses-item_link">
                   <div class="ag-courses-item_bg"></div>
 
@@ -148,78 +167,94 @@ while($USER_DATA = mysqli_fetch_assoc($result))
                   Váriaveis
                   </div>
                 </a>
+        </div>';
+        }
+
+        if ($nivel >= 1) {
+          echo '<div class="ag-courses_item">
+          <a href="comandoEnt.php" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+
+            <div class="ag-courses-item_title">
+              Comandos de entrada e Operadores
+            </div>
+
+          </a>
+        </div>';
+        }
+
+        if ($nivel >= 2) {
+            echo '<div class="ag-courses_item">
+            <a href="estCond.php" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+
+              <div class="ag-courses-item_title">
+                Estruturas Condicionais
               </div>
+            </a>
+          </div>';
+        }
+        if($nivel >=3){
+          echo '<div class="ag-courses_item">
+          <a href="estRep.php" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
 
-              <div class="ag-courses_item">
-                <a href="comandoEnt.php" class="ag-courses-item_link">
-                  <div class="ag-courses-item_bg"></div>
+            <div class="ag-courses-item_title">
+              Estruturadas de Repetição
+            </div>
+          </a>
+        </div>';
+        }
+        if($nivel>=4){
+          echo' <div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
 
-                  <div class="ag-courses-item_title">
-                    Comandos de entrada e Operadores
-                  </div>
+            <div class="ag-courses-item_title">
+              Procedimentos
+            </div>
+          </a>
+        </div>';
+        }
+        if($nivel>=5){
+          echo'<div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg">
+            </div>
+            <div class="ag-courses-item_title">
+              Funções
+            </div>
+          </a>
+        </div>';
+        }
+        if($nivel>=6){
+          echo '<div class="ag-courses_item">
+          <a href="#" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
 
-                </a>
-              </div>
+            <div class="ag-courses-item_title">
+              Vetores
+            </div>
+          </a>
+        </div>';
+        }
+        if($nivel>=7){
+          echo '<div class="ag-courses_item">
+          <a href="jogoMatrizes.php" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
 
-              <div class="ag-courses_item">
-                <a href="estCond.php" class="ag-courses-item_link">
-                  <div class="ag-courses-item_bg"></div>
-
-                  <div class="ag-courses-item_title">
-                    Estruturas Condicionais
-                  </div>
-                </a>
-              </div>
-
-              <div class="ag-courses_item">
-                <a href="estRep.php" class="ag-courses-item_link">
-                  <div class="ag-courses-item_bg"></div>
-
-                  <div class="ag-courses-item_title">
-                    Estruturadas de Repetição
-                  </div>
-                </a>
-              </div>
-
-              <div class="ag-courses_item">
-                <a href="#" class="ag-courses-item_link">
-                  <div class="ag-courses-item_bg"></div>
-
-                  <div class="ag-courses-item_title">
-                    Procedimentos
-                  </div>
-                </a>
-              </div>
-
-              <div class="ag-courses_item">
-                <a href="#" class="ag-courses-item_link">
-                  <div class="ag-courses-item_bg">
-                  </div>
-                  <div class="ag-courses-item_title">
-                    Funções
-                  </div>
-                </a>
-              </div>
-
-              <div class="ag-courses_item">
-                <a href="#" class="ag-courses-item_link">
-                  <div class="ag-courses-item_bg"></div>
-
-                  <div class="ag-courses-item_title">
-                    Vetores
-                  </div>
-                </a>
-              </div>
-
-              <div class="ag-courses_item">
-                <a href="jogoMatrizes.php" class="ag-courses-item_link">
-                  <div class="ag-courses-item_bg"></div>
-
-                  <div class="ag-courses-item_title">
-                  Matrizes
-                  </div>
-                </a>
-              </div>
+            <div class="ag-courses-item_title">
+            Matrizes
+            </div>
+          </a>
+        </div>';
+        }
+            
+        
+        mysqli_free_result($resultado);
+        mysqli_close($conexao);
+        
+      ?>
 
             </div>
           </div>

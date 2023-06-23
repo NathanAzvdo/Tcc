@@ -20,6 +20,7 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/visualg.css">
+    <link rel="icon" href="../img/icon.png">
     <title>CodeGenious - introdução</title>
 </head>
 
@@ -33,7 +34,7 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
           <div class="line3"></div>
         </div>
         <ul class="nav-list">
-          <li><a href="#">Jogos</a></li>
+          <li><a href="telaInicial.php#jogosDiv">Jogos</a></li>
           <li><a href="#">Contato</a></li>
           <li><a href="#">Sobre nós</a></li>
           <li><a href="#">Teste</a></li>
@@ -229,25 +230,9 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
         <p>O bloco "FimAlgoritmo" indica ao Visualg que não há mais instruções para serem executadas no escopo principal do algoritmo. Ele encerra o bloco principal e sinaliza o fim do programa.</p>
     </div>
 
-    <footer>
-    <div class="footer-content">
-      <div class="imgFooter" id="florFooter">
-        <img src="../img/flor.png" id="imgFlor">
-      </div>
-      
-      <div class="textFooter">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus consequatur rerum deserunt dignissimos quasi facilis repellat odio tempora, recusandae quos ratione, ullam dolore fugit laboriosam facere. Tenetur doloremque labore nihil!
-      </div>
-      
-      
-
-      <div class="imgFooter">
-        <img src="../img/roboLupa.png" id="roboFooter">
-      </div>
-
-
+    <div class="btnjog">
+        <a href="variaveis.php"><button id="btnjog">Próximo Módulo-></button></a>
     </div>
-  </footer>
 </body>
 
 </html>

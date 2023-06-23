@@ -40,7 +40,6 @@ while($USER_DATA = mysqli_fetch_assoc($result))
         <div class="line3"></div>
       </div>
       <ul class="nav-list">
-        <li><a href="#">Jogos</a></li>
         <li><a href="paginas/login.php">Login</a></li>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre nós</a></li>

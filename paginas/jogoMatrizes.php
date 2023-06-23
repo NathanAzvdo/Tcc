@@ -32,7 +32,7 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
         <div class="line3"></div>
       </div>
       <ul class="nav-list">
-        <li><a href="#">Jogos</a></li>
+        <li><a href="telaInicial.php#jogosDiv">Jogos</a></li>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre nós</a></li>
         <li><a href="#">Teste</a></li>

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/visualg.css">
+    <link rel="icon" href="../img/icon.png">
     <title>CodeGenious - Estruturas De Repetição</title>
 </head>
 
@@ -20,7 +21,7 @@
           <div class="line3"></div>
         </div>
         <ul class="nav-list">
-          <li><a href="#">Jogos</a></li>
+          <li><a href="telaInicial.php#jogosDiv">Jogos</a></li>
           <li><a href="#">Contato</a></li>
           <li><a href="#">Sobre nós</a></li>
           <li><a href="#">Teste</a></li>

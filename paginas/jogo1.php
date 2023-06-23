@@ -1,6 +1,7 @@
 <?php
         
         session_start();
+        
         include_once('config.php');
         $email = $_SESSION['email'];
         
@@ -33,7 +34,7 @@
                     header('Location:variaveisJogo.php');
                 }
               }
-            }
+        }
             else{
             header('Location:telaInicial.php');
             }

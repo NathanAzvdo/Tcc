@@ -21,7 +21,7 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
   <link rel="icon" href="../img/icon.png">
 
 
-  <title>CodeGenious</title>
+  <title>CodeGenious - Variáveis</title>
 
 </head>
 
@@ -35,7 +35,7 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
         <div class="line3"></div>
       </div>
       <ul class="nav-list">
-        <li><a href="#">Jogos</a></li>
+        <li><a href="telaInicial.php#jogosDiv">Jogos</a></li>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre nós</a></li>
         <li><a href="#">Teste</a></li>
@@ -166,7 +166,7 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
         const div = document.getElementById('tres-estrelas');
         div.style.display="flex";
     }
-    if(cont<3){
+    if(cont==1 || cont==0){
         const div = document.getElementById('uma-estrela');
         div.style.display="flex";
     }
