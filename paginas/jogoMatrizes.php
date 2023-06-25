@@ -5,7 +5,6 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
   unset($_SESSION['email']);
   unset($_SESSION['senha']);
   header('Location:../index.php');
-
 }
 ?>
 <!DOCTYPE html>
@@ -41,31 +40,37 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
     </nav>
   </header>
 
+  <script src="../js/menu.js"></script>
+  
   <div class="anima">
     <div class="titulo">Jogo 08
-    <div><img src="../img/jogo-removebg-preview .png"></div>
+      <div><img src="../img/jogo-removebg-preview .png"></div>
     </div>
     <div class="divsLadoaLado">
-      <div class="jogo">
-        <div class="board">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <button onclick="resetGame()">reset</button>
-      </div>
+      <div class="flexRow">
+      <div class="centro">
+        <div id="[0,0]"></div>
+        <div id="[0,1]"></div>
+        <div id="[0,2]"></div>
+        <div id="[1,0]"></div>
+        <div id="[1,1]"></div>
+        <div id="[1,2]"></div>
+        <div id="[2,0]"></div>
+        <div id="[2,1]"></div>
+        <div id="[2,2]"></div>
+    </div>
+    <input type="text" placeholder="Digite a posição de jogada. ex:[0,0]" id="jogada">
+    <button onclick="jogada()">Jogar</button>
+      <script src="../js/jogo8.js"></script>
+    </div>
     </div>
   </div>
+</div>
   <div id="cinco-estrelas">
-      <form  action="jogo8.php" method="POST">
+      <form  action="jogo1.php" method="POST">
       <div class="pop-up">
         <div class="trofeu"><img src="../img/trofeu.png" alt=""></div>
+        <input type="hidden" name="form_id" value="form1">
         <div class="estrelas">
           <img src="../img/estrela.png" class="estrela">
           <img src="../img/estrela.png" class="estrela">
@@ -81,9 +86,42 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
         </div>
       </form>
       </div> 
-
-  <script src="../js/tictactoe.js"></script>
-  <script src="../js/menu.js"></script>
+      </div>
+      
+      <div id="tres-estrelas">
+      <form  action="jogo1.php" method="POST">
+      <div class="pop-up">
+      <input type="hidden" name="form_id" value="form2">
+        <div class="estrelas">
+          <img src="../img/estrela.png" class="estrela">
+          <img src="../img/estrela.png" class="estrela">
+          <img src="../img/estrela.png" class="estrela">
+        </div>
+        <div class="cincoE">
+          
+        </div>
+        <div class="prox">
+          <button type="submit"><b>Continuar</b></button>
+        </div>
+      </form>
+      </div> 
+      </div>
+      <div id="uma-estrela">
+      <form action="jogo1.php" method="POST">
+      <div class="pop-up">
+      <input type="hidden" name="form_id" value="form3">
+        <div class="estrelas">
+          <img src="../img/estrela.png" class="estrela">
+        </div>
+        <div class="cincoE">
+          
+        </div>
+        <div class="prox">
+          <button type="submit"><b>Tente novamente</b></button>
+        </div>
+      </form>
+      </div>
+      
 </body>
-
 </html>
+

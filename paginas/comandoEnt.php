@@ -135,6 +135,8 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
 </div>
 
     <div class="paragrafo"> Dessa forma, os operadores lógicos nos permitem criar expressões lógicas mais complexas e tomar decisões com base nas condições estabelecidas em nosso programa.</div>  
-
+    <div class="btnjog">
+        <a href="jogoEnt.php"><button id="btnjog">Jogar</button></a>
+    </div>
 </html> 
 </body>
