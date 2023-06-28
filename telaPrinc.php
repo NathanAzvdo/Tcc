@@ -52,7 +52,7 @@ while($USER_DATA = mysqli_fetch_assoc($result))
   <div class="anima">
 
     <div class="center">
-      <img src="img/Robo.png" id="robo">
+      <img src="img/robo.png" id="robo">
 
       <div class="ranking">
         <h1>Ranking <img src="img/trofeu-removebg-preview.png" alt="" width="30px" height="30px"></h1>

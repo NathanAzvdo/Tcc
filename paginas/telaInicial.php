@@ -182,6 +182,18 @@ while($USER_DATA = mysqli_fetch_assoc($result))
           </a>
         </div>';
         }
+        else{
+          echo '<div class="ag-courses_item" style="opacity:0.3; pointer-events:none;">
+          <div class="ag-courses-item_link" style="pointer-events:none;">
+            <div class="ag-courses-item_bg" style="pointer-events:none;"></div>
+
+            <div class="ag-courses-item_title">
+              Comandos de entrada e Operadores
+            </div>
+
+          </div>
+        </div>';
+        }
 
         if ($nivel >= 2) {
             echo '<div class="ag-courses_item">
@@ -194,6 +206,17 @@ while($USER_DATA = mysqli_fetch_assoc($result))
             </a>
           </div>';
         }
+        else{
+          echo '<div class="ag-courses_item" style="opacity:0.3; pointer-events:none;">
+          <div class="ag-courses-item_link" style="pointer-events: none;">
+            <div class="ag-courses-item_bg" style="pointer-events: none;"></div>
+
+            <div class="ag-courses-item_title">
+              Estruturas Condicionais
+            </div>
+          </div>
+        </div>';
+        }
         if($nivel >=3){
           echo '<div class="ag-courses_item">
           <a href="estRep.php" class="ag-courses-item_link">
@@ -205,31 +228,43 @@ while($USER_DATA = mysqli_fetch_assoc($result))
           </a>
         </div>';
         }
+        else{
+          echo '<div class="ag-courses_item" style="pointer-events: none; opacity:0.3;">
+          <div class="ag-courses-item_link" style="pointer-events: none;">
+            <div class="ag-courses-item_bg" style="pointer-events: none;"></div>
+
+            <div class="ag-courses-item_title">
+              Estruturadas de Repetição
+            </div>
+          </div>
+        </div>';
+        }
         if($nivel>=4){
           echo' <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
+          <a href="func.php" class="ag-courses-item_link">
             <div class="ag-courses-item_bg"></div>
 
             <div class="ag-courses-item_title">
-              Procedimentos
+              Procedimentos e Funções
             </div>
           </a>
         </div>';
         }
-        if($nivel>=5){
-          echo'<div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg">
-            </div>
+        else{
+          echo' <div class="ag-courses_item" style="opacity:0.3; pointer-events:none;">
+          <div class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+
             <div class="ag-courses-item_title">
-              Funções
+              Procedimentos e Funções
             </div>
-          </a>
+          </div>
         </div>';
         }
-        if($nivel>=6){
+    
+        if($nivel>=5){
           echo '<div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
+          <a href="Vetores.php" class="ag-courses-item_link">
             <div class="ag-courses-item_bg"></div>
 
             <div class="ag-courses-item_title">
@@ -238,15 +273,37 @@ while($USER_DATA = mysqli_fetch_assoc($result))
           </a>
         </div>';
         }
-        if($nivel>=7){
+        else{
+          echo '<div class="ag-courses_item" style="opacity:0.3; pointer-events:none;">
+          <div class="ag-courses-item_link" style="pointer-events:none;">
+            <div class="ag-courses-item_bg" style="pointer-events:none;"></div>
+
+            <div class="ag-courses-item_title">
+              Vetores
+            </div>
+          </div>
+        </div>';
+        }
+        if($nivel>=6){
           echo '<div class="ag-courses_item">
-          <a href="jogoMatrizes.php" class="ag-courses-item_link">
+          <a href="Matrizes.php" class="ag-courses-item_link">
             <div class="ag-courses-item_bg"></div>
 
             <div class="ag-courses-item_title">
             Matrizes
             </div>
           </a>
+        </div>';
+        }
+        else{
+          echo '<div class="ag-courses_item" style="pointer-events:none; opacity:0.3;">
+          <div class="ag-courses-item_link" style="pointer-events:none;">
+            <div class="ag-courses-item_bg" style="pointer-events:none;"></div>
+
+            <div class="ag-courses-item_title">
+            Matrizes
+            </div>
+          </div>
         </div>';
         }
             

@@ -6,7 +6,7 @@ let lockBoard = false;
 let firstCard, secondCard;
 let errorCount = 0;
 let matchCount = 0;
-const maxErrors = 10;
+const maxErrors = 8;
 
 function flipCard() {
   if (lockBoard) return;
@@ -34,7 +34,7 @@ function disableCards() {
   resetBoard();
   matchCount++;
   if (matchCount === cards.length / 2) {
-    if(errorCount>=7){
+    if(errorCount>=5){
         setTimeout(() => {
             document.getElementById('tres-estrelas').style.display="block";
           }, 500);

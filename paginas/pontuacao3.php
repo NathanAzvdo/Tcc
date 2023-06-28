@@ -16,7 +16,7 @@ $email = $_SESSION['email'];
         
     // Executa a query utilizando a conexão correta $conexao
     mysqli_query($conexao, $sql2);
-    header('Location:telaInicial.php');
+    header('Location:redirect.php');
 
 
 // Libera recursos

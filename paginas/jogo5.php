@@ -18,9 +18,9 @@
             $nivel = $linha['nivel'];
         }
        
-        if ($nivel < 3) {
+        if ($nivel < 5) {
           
-            $sql = "UPDATE cadastro SET nivel = '3' WHERE email = '{$email}'";
+            $sql = "UPDATE cadastro SET nivel = '5' WHERE email = '{$email}'";
             mysqli_query($conexao, $sql);
             
             if (isset($_POST['form_id'])) {
@@ -31,7 +31,7 @@
                 } elseif ($formId === 'form2') {
                     header('Location:pontuacao3.php');
                 } elseif ($formId === 'form3') {
-                    header('Location:jogoCond.php');
+                    header('Location:jogoFunc.php');
                 }
               }
         }

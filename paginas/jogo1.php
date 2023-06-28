@@ -36,7 +36,7 @@
               }
         }
             else{
-            header('Location:telaInicial.php');
+            header('Location:redirect.php');
             }
         
         // Libera recursos

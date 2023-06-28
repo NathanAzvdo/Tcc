@@ -31,12 +31,12 @@
                 } elseif ($formId === 'form2') {
                     header('Location:pontuacao3.php');
                 } elseif ($formId === 'form3') {
-                    header('Location:variaveisJogo.php');
+                    header('Location:jogoEnt.php');
                 }
               }
         }
             else{
-            header('Location:telaInicial.php');
+            header('Location:redirect.php');
             }
         
         // Libera recursos

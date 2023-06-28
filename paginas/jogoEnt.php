@@ -108,18 +108,17 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
   </div>
   <div class="error-count">Erros: <span id="error-counter">0</span></div>
   <script src="../js/jogo2.js"></script>
-</div>
-
-    
+  
+  
 <div id="cinco-estrelas">
       <form  action="jogo2.php" method="POST">
-      <div class="pop-up">
-        <div class="trofeu"><img src="../img/trofeu.png" alt=""></div>
-        <input type="hidden" name="form_id" value="form1">
-        <div class="estrelas">
-          <img src="../img/estrela.png" class="estrela">
-          <img src="../img/estrela.png" class="estrela">
-          <img src="../img/estrela.png" class="estrela">
+        <div class="pop-up">
+          <div class="trofeu"><img src="../img/trofeu.png" alt=""></div>
+          <input type="hidden" name="form_id" value="form1">
+          <div class="estrelas">
+            <img src="../img/estrela.png" class="estrela">
+            <img src="../img/estrela.png" class="estrela">
+            <img src="../img/estrela.png" class="estrela">
           <img src="../img/estrela.png" class="estrela">
           <img src="../img/estrela.png" class="estrela">
         </div>
@@ -130,10 +129,10 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
           <button type="submit"><b>Continuar</b></button>
         </div>
       </form>
-      </div> 
-      </div>
-      
-      <div id="tres-estrelas">
+    </div> 
+  </div>
+  
+  <div id="tres-estrelas">
       <form  action="jogo2.php" method="POST">
       <div class="pop-up">
       <input type="hidden" name="form_id" value="form2">
@@ -144,12 +143,13 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
         </div>
         <div class="cincoE">
           
-        </div>
-        <div class="prox">
-          <button type="submit"><b>Continuar</b></button>
-        </div>
-      </form>
+          </div>
+          <div class="prox">
+            <button type="submit"><b>Continuar</b></button>
+          </div>
+        </form>
       </div> 
       </div>
+    </div>
 </body>
 </html>

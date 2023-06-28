@@ -1,6 +1,7 @@
 <?php
         
         session_start();
+        
         include_once('config.php');
         $email = $_SESSION['email'];
         
@@ -16,15 +17,27 @@
         if ($linha = mysqli_fetch_assoc($resultado)) {
             $nivel = $linha['nivel'];
         }
-        // Usa o valor da variável $nivel conforme necessário
-        if ($nivel < 8) {
+       
+        if ($nivel < 7) {
           
-            $sql = "UPDATE cadastro SET nivel = '8' WHERE email = '{$email}'";
+            $sql = "UPDATE cadastro SET nivel = '7' WHERE email = '{$email}'";
             mysqli_query($conexao, $sql);
-            header('Location:pontuacao5.php');
-        }else{
-            header('Location:comandoEnt.php');
+            
+            if (isset($_POST['form_id'])) {
+                $formId = $_POST['form_id'];
+                
+                if ($formId === 'form1') {
+                    header('Location:pontuacao5.php');
+                } elseif ($formId === 'form2') {
+                    header('Location:pontuacao3.php');
+                } elseif ($formId === 'form3') {
+                    header('Location:jogoMatrizes.php');
+                }
+              }
         }
+            else{
+            header('Location:redirect.php');
+            }
         
         // Libera recursos
         mysqli_free_result($resultado);

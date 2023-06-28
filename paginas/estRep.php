@@ -128,6 +128,10 @@
         <p>Neste exemplo, o programa solicita ao usuário um número e, em seguida, utiliza o loop "Para" para exibir a tabuada desse número. O bloco de código é repetido 10 vezes (de 1 a 10) e o resultado é calculado e exibido em cada interação.. <br>
             Esses são os três tipos principais de estruturas de repetição no Visualg: "Enquanto", "Repita" e "Para". Cada um tem suas próprias características e é utilizado de acordo com a necessidade específica do problema a ser resolvido.
         </p>
+
+        <div class="btnjog">
+        <a href="repJogo.php"><button id="btnjog">Jogar</button></a>
+    </div>
 </body>
 
 </html>

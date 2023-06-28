@@ -22,7 +22,7 @@ function jogada() {
     moves++;
 
     if (checkWin(row, col)) {
-      document.getElementById('cinco-estrelas').style.display="block";
+      document.getElementById('cinco-estrelas').style.display = "block";
       resetGame();
     } else if (moves === 9) {
       alert("Empate!");
@@ -70,60 +70,105 @@ function checkWin(row, col) {
 }
 
 function makeAIMove() {
-    var availableMoves = [];
-  
+  if (isFirstAIMove) {
+    // Faz uma jogada aleatória no primeiro movimento
+    bestMove = getRandomMove();
+  } else {
+    var alpha = -Infinity;
+    var beta = Infinity;
+    var depth = 0;
+    var maximizingPlayer = currentPlayer === 'O';
+    var bestScore = maximizingPlayer ? -Infinity : Infinity;
+    var bestMove;
+
     for (var i = 0; i < 3; i++) {
       for (var j = 0; j < 3; j++) {
         if (board[i][j] === '') {
-          availableMoves.push({ row: i, col: j });
+          board[i][j] = currentPlayer;
+          var score = minimax(board, depth + 1, alpha, beta, !maximizingPlayer);
+          board[i][j] = '';
+
+          if (maximizingPlayer) {
+            if (score > bestScore) {
+              bestScore = score;
+              bestMove = { row: i, col: j };
+            }
+            alpha = Math.max(alpha, bestScore);
+          } else {
+            if (score < bestScore) {
+              bestScore = score;
+              bestMove = { row: i, col: j };
+            }
+            beta = Math.min(beta, bestScore);
+          }
+
+          if (beta <= alpha) {
+            // Podar o restante das jogadas
+            break;
+          }
         }
       }
     }
-  
-    var randomMove = availableMoves[Math.floor(Math.random() * availableMoves.length)];
-    var row = randomMove.row;
-    var col = randomMove.col;
-  
-    board[row][col] = 'O';
-    var cellId = "[" + row + "," + col + "]";
-    document.getElementById(cellId).innerHTML = 'O';
-    moves++;
-  
-    if (checkWin(row, col)) {
-      setTimeout(function () {
-        document.getElementById('uma-estrela').style.display="block";
-      }, 0);
-      resetGame();
-    } else if (moves === 9) {
-      setTimeout(function () {
-        alert("Empate!");
-      }, 0);
-      resetGame();
-    } else {
-      switchPlayer();
+
+    if (!bestMove) {
+      // Se bestMove não estiver definido, escolha uma jogada aleatória
+      bestMove = getRandomMove();
     }
   }
-  
-  
-function minimax(board, depth, isMaximizing) {
+
+  var row = bestMove.row;
+  var col = bestMove.col;
+
+  board[row][col] = currentPlayer;
+  var cellId = "[" + row + "," + col + "]";
+  document.getElementById(cellId).innerHTML = currentPlayer;
+  moves++;
+
+  if (checkWin(row, col)) {
+    document.getElementById('cinco-estrelas').style.display = "block";
+    resetGame();
+  } else if (moves === 9) {
+    alert("Empate!");
+    resetGame();
+  } else {
+    switchPlayer();
+  }
+}
+
+function getRandomMove() {
+  var availableMoves = [];
+
+  for (var i = 0; i < 3; i++) {
+    for (var j = 0; j < 3; j++) {
+      if (board[i][j] === '') {
+        availableMoves.push({ row: i, col: j });
+      }
+    }
+  }
+
+  var randomMove = availableMoves[Math.floor(Math.random() * availableMoves.length)];
+  return randomMove;
+}
+
+function minimax(board, depth, alpha, beta, isMaximizing) {
   if (checkWin(0, 0)) {
-    return isMaximizing ? -1 : 1;
+    return isMaximizing ? 1 : -1;
   }
 
   if (checkWin(0, 2)) {
-    return isMaximizing ? -1 : 1;
+    return isMaximizing ? 1 : -1;
   }
 
   if (checkWin(1, 1)) {
-    return isMaximizing ? -1 : 1;
+    return isMaximizing ? 1 : -1;
   }
 
   if (checkWin(2, 0)) {
-    return isMaximizing ? -1 : 1;
+    return isMaximizing ? 1 : -1;
   }
 
   if (checkWin(2, 2)) {
-    return isMaximizing ? -1 : 1;
+    return isMaximizing ? 1 : -1;
   }
 
   if (depth === 9) {
@@ -136,9 +181,13 @@ function minimax(board, depth, isMaximizing) {
       for (var j = 0; j < 3; j++) {
         if (board[i][j] === '') {
           board[i][j] = 'O';
-          var score = minimax(board, depth + 1, false);
+          var score = minimax(board, depth + 1, alpha, beta, false);
           board[i][j] = '';
           bestScore = Math.max(score, bestScore);
+          alpha = Math.max(alpha, bestScore);
+          if (beta <= alpha) {
+            break;
+          }
         }
       }
     }
@@ -149,9 +198,13 @@ function minimax(board, depth, isMaximizing) {
       for (var j = 0; j < 3; j++) {
         if (board[i][j] === '') {
           board[i][j] = 'X';
-          var score = minimax(board, depth + 1, true);
+          var score = minimax(board, depth + 1, alpha, beta, true);
           board[i][j] = '';
           bestScore = Math.min(score, bestScore);
+          beta = Math.min(beta, bestScore);
+          if (beta <= alpha) {
+            break;
+          }
         }
       }
     }
@@ -170,9 +223,5 @@ function resetGame() {
   moves = 0;
   isFirstAIMove = true;
 
-  if (currentPlayer === 'O') {
-    setTimeout(function () {
-      makeAIMove();
-    }, 0);
-  }
+  document.getElementById('cinco-estrelas').style.display = "none";
 }
