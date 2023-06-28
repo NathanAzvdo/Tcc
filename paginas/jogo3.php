@@ -27,16 +27,16 @@
                 $formId = $_POST['form_id'];
                 
                 if ($formId === 'form1') {
-                    header('Location:pontuacao5.php');
+                    header('Location:pontuacao5.php?jogo=condicionais');
                 } elseif ($formId === 'form2') {
-                    header('Location:pontuacao3.php');
+                    header('Location:pontuacao3.php?jogo=condicionais');
                 } elseif ($formId === 'form3') {
                     header('Location:jogoCond.php');
                 }
               }
         }
             else{
-            header('Location:redirect.php');
+            header('Location:telaInicial.php');
             }
         
         // Libera recursos

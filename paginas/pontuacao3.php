@@ -16,7 +16,31 @@ $email = $_SESSION['email'];
         
     // Executa a query utilizando a conexão correta $conexao
     mysqli_query($conexao, $sql2);
-    header('Location:redirect.php');
+    
+    if (isset($_GET['jogo'])) {
+        if ($_GET['jogo'] == "variaveis") {
+          header('Location:comandoEnt.php'); 
+        }
+        else if ($_GET['jogo'] == "entrada") {
+            header('Location:estCond.php'); 
+        }
+        else if ($_GET['jogo'] == "condicionais") {
+            header('Location:estRep.php'); 
+        }
+        else if ($_GET['jogo'] == "repeticao") {
+            header('Location:func.php'); 
+        }
+        else if ($_GET['jogo'] == "Func") {
+            header('Location:Vetores.php'); 
+        }
+        else if ($_GET['jogo'] == "Vet") {
+            header('Location:Matrizes.php'); 
+        }
+        else{
+            header('Location:telaInicial.php');
+        }
+        }
+
 
 
 // Libera recursos

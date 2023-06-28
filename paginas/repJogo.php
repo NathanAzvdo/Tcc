@@ -7,6 +7,22 @@ if((!isset($_SESSION['email'])) and (!isset($_SESSION['senha']))){
   header('Location:../index.php');
 
 }
+$email = $_SESSION['email'];
+        
+// Executa a consulta SQL
+  $sql = "SELECT nivel FROM cadastro WHERE email = '{$email}'";
+  $resultado = mysqli_query($conexao, $sql);
+        
+  if (!$resultado) {
+    die("Erro na consulta: " . mysqli_error($conexao));
+  }
+        
+  if ($linha = mysqli_fetch_assoc($resultado)) {
+    $nivel = $linha['nivel'];
+  }
+  if($nivel<3){
+    header('Location:telaInicial.php');
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
