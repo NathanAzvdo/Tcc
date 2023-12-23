@@ -7,7 +7,6 @@
 
 <h2>Objetivos do Projetos</h2>
 <ul> 
-<li>100% de responsividade, se modificando para qualquer tipo de tela</li>
 <li>Projeto funcional,porém leve para que todos possam acessar </li>
 <li>Conteúdo com linguagem juvenil e de fácil entedimento sobre o assunto </li>
 <li>Jogos interativos e intuitivos ensinando como funciona logica computacional </li>
